@@ -12,26 +12,26 @@ npm start
 
 ### 目录结构
 ```js
-config\	               // 配置文件
+config\                // 配置文件
 
-dist\	                 // 构建后的输出目录
+dist\                  // 构建后的输出目录
 
 src\
 
-	interfaces
+  interfaces
 
-	routes\	              // 接口文件
+  routes\               // 接口文件
     
-      index.ts
-      ...
+    index.ts
+    ...
 
-	utils	                // 工具类
+  utils	                // 工具类
 
-	index.ts	            // 入口
+  index.ts              // 入口
 
 .gitignore              // git忽略的文件配置
 
-test\	                  // 测试文件
+test\                   // 测试文件
 
 package.json            // 依赖管理
 
