@@ -1,0 +1,46 @@
+{
+  "name": "hapi-service",
+  "version": "0.0.1",
+  "description": "pdf-service",
+  "main": "index.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "src/**/*.spec.ts"
+    ],
+    "exec": "ts-node ./src/index.ts"
+  },
+  "author": "yuan.wei",
+  "license": "ISC",
+  "dependencies": {
+    "@types/inert": "^5.1.2",
+    "@types/vision": "^5.3.5",
+    "bunyan": "^1.8.12",
+    "config": "^3.0.1",
+    "fs": "0.0.1-security",
+    "hapi": "^17.8.1",
+    "hapi-swagger": "^9.3.0",
+    "inert": "^5.1.2",
+    "joi": "^14.3.1",
+    "vision": "^5.4.4"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.5",
+    "@types/config": "0.0.34",
+    "@types/hapi": "^17.8.2",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2"
+  }
+}
