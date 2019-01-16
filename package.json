@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lab --verbose --colors --transform node_modules/lab-transform-typescript | bunyan",
     "start": "nodemon"
   },
   "nodemonConfig": {
@@ -38,6 +38,9 @@
     "@types/bunyan": "^1.8.5",
     "@types/config": "0.0.34",
     "@types/hapi": "^17.8.2",
+    "code": "^5.2.4",
+    "lab": "^18.0.1",
+    "lab-transform-typescript": "^3.0.1",
     "nodemon": "^1.18.9",
     "ts-node": "^7.0.1",
     "tslint": "^5.12.1",
