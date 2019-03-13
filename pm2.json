@@ -1,6 +1,6 @@
 {
   "name": "hapi-service",
-  "script": "./src/app.js",
+  "script": "./src/app.ts",
   "instances": 2,
   "exec_mode": "cluster",
   "min_uptime": "200s",
