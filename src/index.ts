@@ -28,6 +28,7 @@ const appConfig = {
 
 (async () => {
   try {
+    await server.register(appConfig);
     await server.register(Inert);
     await server.register(Vision);
     await server.register(swaggerConfig);
