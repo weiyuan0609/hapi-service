@@ -5,6 +5,7 @@ import hapiSwagger = require('hapi-swagger');
 import Inert = require('inert');
 import path = require('path');
 import Vision = require('vision');
+import appPlugin = require('./plugins/app');
 import routes = require('./routes');
 import logger = require('./utils/logger');
 
@@ -19,6 +20,10 @@ const swaggerConfig = {
       version: pack.version
     }
   }
+};
+
+const appConfig = {
+  plugin: appPlugin
 };
 
 (async () => {
