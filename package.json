@@ -1,14 +1,19 @@
 {
   "name": "hapi-service",
   "version": "0.0.1",
-  "description": "pdf-service",
+  "description": "hapi-service",
   "main": "index.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "lab --verbose --colors --transform node_modules/lab-transform-typescript | bunyan",
-    "start": "nodemon"
+    "start": "nodemon | bunyan",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:weiyuan0609/hapi-service.git"
   },
   "nodemonConfig": {
     "watch": [
@@ -18,7 +23,7 @@
     "ignore": [
       "src/**/*.spec.ts"
     ],
-    "exec": "ts-node ./src/index.ts"
+    "exec": "rm -rf dist && tsc && node ./dist/index.js"
   },
   "author": "yuan.wei",
   "license": "ISC",
