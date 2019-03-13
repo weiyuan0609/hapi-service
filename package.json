@@ -9,7 +9,10 @@
   "scripts": {
     "test": "lab --verbose --colors --transform node_modules/lab-transform-typescript | bunyan",
     "start": "nodemon | bunyan",
-    "build": "tsc"
+    "build": "tsc",
+    "deploy-test": "pm2 startOrReload pm2.json --env test --update-env",
+    "deploy-demo": "pm2 startOrReload pm2.json --env demo --update-env",
+    "deploy-prod": "pm2 startOrReload pm2.json --env production --update-env"
   },
   "repository": {
     "type": "git",

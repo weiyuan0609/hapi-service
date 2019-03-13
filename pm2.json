@@ -1,0 +1,26 @@
+{
+  "name": "hapi-service",
+  "script": "./dist/app.js",
+  "instances": 2,
+  "exec_mode": "cluster",
+  "min_uptime": "200s",
+  "max_restarts": 10,
+  "merge_logs": true,
+  "max_memory_restart" : "500M",
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": 10010
+  },
+  "env_test": {
+    "NODE_ENV": "test",
+    "PORT": 10010
+  },
+  "env_demo": {
+    "NODE_ENV": "demo",
+    "PORT": 10010
+  },
+  "env_production": {
+    "NODE_ENV": "production",
+    "PORT": 10010
+  }
+}
