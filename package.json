@@ -23,7 +23,7 @@
     "ignore": [
       "src/**/*.spec.ts"
     ],
-    "exec": "rm -rf dist && tsc && node ./dist/index.js"
+    "exec": "ts-node ./src/index.ts"
   },
   "author": "yuan.wei",
   "license": "ISC",

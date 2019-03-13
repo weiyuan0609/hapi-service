@@ -1,6 +1,6 @@
 import Joi = require('joi');
+import logger = require('../utils/logger');
 import Router = require('../utils/Router');
-
 const router = new Router();
 
 router.get('/get/{id}', {
@@ -23,6 +23,7 @@ router.get('/get/{id}', {
   },
   handler(req, h) {
     const id = req.params.id;
+    logger.info('查询请求成功', id);
     return id;
   }
 });
@@ -47,6 +48,7 @@ router.post('/post/{id}', {
   },
   handler(req, h) {
     const id = req.params.id;
+    logger.info('post请求成功', id);
     return id;
   }
 });
