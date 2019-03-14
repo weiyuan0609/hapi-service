@@ -16,7 +16,7 @@ npm start
 ### 访问
 
 ```bash
-  http://localhost:10010/documentation
+  http://server.wyyuan.com:10010/documentation
 ```
 
 ### 目录结构
