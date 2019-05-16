@@ -1,5 +1,5 @@
 const Lab = require('lab');
-const server = require('../src/index');
+const server = require('../src/app');
 
 const lab = Lab.script();
 
@@ -18,7 +18,16 @@ describe('/test', () => {
     expect(response.result).to.equal('123456');
   });
 
-  it('GET /post', async () => {
+  it('GET /get/v2', async () => {
+    const response = await server.inject({
+      method: 'GET',
+      url: '/get/v2/123456'
+    });
+    expect(response.statusCode).to.equal(200);
+    expect(response.result).to.equal('123456');
+  });
+
+  it('POST /post', async () => {
     const response = await server.inject({
       method: 'POST',
       url: '/post/123456'
